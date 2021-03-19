@@ -7,7 +7,7 @@
     $mydb = new db("root", "","sec2", false);
     if($_SERVER['REQUEST_METHOD']=='GET'){
         debug_text("for GET Method", $debug_mode);
-        echo json_encode(show_data());
+        (show_data());
     }else if ($_SERVER['REQUEST_METHOD'] =='POST'){
         debug_text("for POST Method", $debug_mode);
     }else{
