@@ -26,6 +26,11 @@ class db{
             echo "Debug : {$text}<br>";
            }
         }
+
+    function query_only($sql){
+        $result = $this->db->query($sql);
+    }    
+
     function close(){
         $this->db->close();
     }
